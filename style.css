@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=PT+Sans:wght@700&family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, green, yellow, orange, red);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.current{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hourly{
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0.6em;
+    cursor: pointer;
+    display: flex;
+    overflow: scroll;
+    width: 20%;
+    gap: 15px;
+}
+.hourly::-webkit-scrollbar{
+    width: 0;
+}
+.title{
+    display: flex;
+}
+.gradus{
+    display: flex;
+}
+.vozduh{
+    display: flex;
+}
+.vozduh .dewpoint{
+    margin-left: 20px;
+}
+.dayweather{
+    display: flex;
+}
+.weather{
+    margin-left: 30px;
+}
+.feels1{
+    margin-left: 30px;
+}
+.dayweather{
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0.2em;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.day{
+    margin-top: 20px;
+}
+.date{
+    margin-top: 50px;
+}
