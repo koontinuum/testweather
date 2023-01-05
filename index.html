@@ -9,25 +9,50 @@
   </head>
   <body>
     <div class="current">
-      <div class="date"></div>
-      <h1 class="head"></h1>
-      <div class="gradus">
-        <h1 class="title"></h1>
-        <h1>°</h1>
-      </div>
-      <p class="main"></p>
+      <select name="" id="">
+        <option value="bishkek">Бишкек</option>
+        <option value="osh">Ош</option>
+        <option value="tokmok">Токмок</option>
+        <option value="batken">Баткен</option>
+        <option value="talas">Талас</option>
+        <option value="naryn">Нарын</option>
+        <option value="karakol">Каракол</option>
+        <option value="djalalAbad">Джалал-Абад</option>
+      </select>
+      <h1 class="title"></h1>
       <img class="icon" src="" alt="" />
-      <div class="vozduh">
-        <p class="feels"></p>
-        <p class="dewpoint"></p>
-      </div>
+      <p class="description"></p>
+      <p class="feels"></p>
     </div>
     <div class="hourly"></div>
-    <h1 class="day">Day:</h1>
-    <div class="dayweather">
-      <div class="daily"></div>
-      <div class="weather"></div>
-      <div class="feels1"></div>
+    <div class="text">
+      <img
+        class="calendar"
+        src="./icons8-google-calendar-50.png"
+        alt=""
+        width="30px"
+        height="30px"
+      />
+      <h2>Прогноз на неделю:</h2>
+    </div>
+    <div class="daily"></div>
+    <div class="text1">
+      <img
+        class="calendar"
+        src="./location.png"
+        alt=""
+        width="30px"
+        height="30px"
+      />
+      <h2>Местоположение:</h2>
+    </div>
+    <div class="map">
+      <script
+        type="text/javascript"
+        charset="utf-8"
+        async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9dfa0d1da40b3234850de97d9f5cb5e3d83f28c5924026852a7ffee25fc7ef9f&amp;width=1258&amp;height=449&amp;lang=ru_RU&amp;scroll=true"
+      ></script>
     </div>
     <script src="./script.js"></script>
   </body>

@@ -1,80 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=PT+Sans:wght@700&family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=PT+Sans:wght@700&family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300&family=PT+Sans:wght@700&family=Roboto&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 body{
-    width: 100%;
+    background-color: gray;
+    font-family: 'Open Sans', sans-serif;
     height: 100%;
-    background: linear-gradient(-45deg, green, yellow, orange, red);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    font-family: 'PT Sans', sans-serif;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    width: 100%;
 }
 .current{
-    text-align: center;
-    align-items: center;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-}
-.hourly{
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 0.6em;
-    cursor: pointer;
-    display: flex;
-    overflow: scroll;
-    width: 20%;
-    gap: 15px;
-}
-.hourly::-webkit-scrollbar{
-    width: 0;
+    align-items: center;
 }
 .title{
-    display: flex;
+    font-size: 4em;
 }
-.gradus{
-    display: flex;
+.description, .feels{
+    font-size: 1.5em;
 }
-.vozduh{
-    display: flex;
+select{
+    margin-top: 70px;
+    width: 200px;
+    height: 40px;
+    font-size: 2em;
+    border: none;
+    text-align: center;
+    background: none;
+    appearance: none;
+    outline: none;
+    background-color: transparent;
 }
-.vozduh .dewpoint{
-    margin-left: 20px;
-}
-.dayweather{
-    display: flex;
-}
-.weather{
-    margin-left: 30px;
-}
-.feels1{
-    margin-left: 30px;
-}
-.dayweather{
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 0.2em;
-}
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-.day{
+.hourly{
     margin-top: 20px;
+    display: flex;
+    width: 85%;
+    height: 85%;
+    margin-left: 8%;
+    overflow: scroll;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0.9em;
 }
-.date{
-    margin-top: 50px;
+.hourly::-webkit-scrollbar {
+    width: 0;
+}
+.hour{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.daily{
+    width: 85%;
+    margin-left: 8%;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+.daily::-webkit-scrollbar {
+    width: 0;
+}
+.text{
+    margin-top: 60px;
+    margin-left: 150px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.calendar{
+    margin-right: 10px;
+}
+
+.day{
+    text-align: center;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.text1{
+    margin-bottom: 10px;
+    margin-top: 60px;
+    margin-left: 150px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+@media(max-width:576px) {
+    .daily{
+        overflow: scroll;
+    }
+    .text{
+        display: flex;
+        margin: auto;
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    .text1{
+        display: flex;
+        margin: auto;
+        margin-left: 40px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
 }
